@@ -1,6 +1,6 @@
-# ABAP
-###Useful ABAP code sinpets
-###### correct Timezone for particular Warehouse
+#ABAP
+##Useful ABAP code sinpets
+######correct Timezone for particular Warehouse
 ```
   CALL FUNCTION '/SCWM/LGNUM_TZONE_READ'
     EXPORTING
