@@ -1,5 +1,9 @@
 # ABAP
 ## Useful ABAP code sinpets
+###### Get value from another program using assign field symbol
+```
+ASSIGN ('(SAPLCOKO1)AFVGD[]') TO <FS_AFVGD>.
+```
 ###### correct Timezone for particular Warehouse
 ```
   CALL FUNCTION '/SCWM/LGNUM_TZONE_READ'
