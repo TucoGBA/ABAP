@@ -22,6 +22,9 @@
 ```
 ASSIGN ('(SAPLCOKO1)AFVGD[]') TO <FS_AFVGD>.
 ```
+###### Fast way to get rid off leading zeros
+`WRITE is_doc_ref-doc_number TO lv_doc_number NO-ZERO.`
+
 ###### correct Timezone for particular Warehouse
 ```
   CALL FUNCTION '/SCWM/LGNUM_TZONE_READ'
