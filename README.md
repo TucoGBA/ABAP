@@ -1,28 +1,12 @@
 # SAP - EWM
-## TCodes
-###### Physical Inventory
-|TCode|Description|
-|-----|------------|
-|`/SCWM/PI_COMPL_DEL`|Delete Completeness Data Sets|
-|`/SCWM/PI_COUNT`|Enter Physical Inventory Count|
-|`/SCWM/PI_COUNTLIST`|	Create Phys. Inventory Count in List|
-|`/SCWM/PI_CREATE`|Create Physical Inventory Document|
-|`/SCWM/PI_DOC_CREATE`|	Create Physical Inventory Document|
-|`/SCWM/PI_DOWNLOAD`|Download Storage Bins and Count Data|
-|`/SCWM/PI_PROCESS`|Process Physical Inventory Document|
-|`/SCWM/PI_SAMP_CR`|Upload Sample to Create PI Documents|
-|`/SCWM/PI_SAMP_STOCK`|Download Stock Population|
-|`/SCWM/PI_SAMP_UPDATE`|Download Results or Stock Population|
-|`/SCWM/PI_UPLOAD`|Upload Storage Bins and Count Data|
-|`/SCWM/PI_USER`|User Maint. Tolerance Gr. Phys.Inv.|
-|`/SCWM/PI_USER_DIFF`|Assign Users to Tol. Group for Diff.|
-|`/SCWM/PIDO`|Number Range Maintenance: /SCWM/PIDO|
+
 ## Useful ABAP code sinpets
 ###### Get value from another program using assign field symbol
 ```
 ASSIGN ('(SAPLCOKO1)AFVGD[]') TO <FS_AFVGD>.
 ```
 ###### Fast way to get rid off leading zeros
+
 `WRITE is_doc_ref-doc_number TO lv_doc_number NO-ZERO.`
 
 ###### correct Timezone for particular Warehouse
@@ -50,3 +34,21 @@ ASSIGN ('(SAPLCOKO1)AFVGD[]') TO <FS_AFVGD>.
   CONVERT DATE lv_act_date TIME lv_act_time
                INTO TIME STAMP ls_item_wa-count_date TIME ZONE lv_timezone.
 ```
+## TCodes
+###### Physical Inventory
+|TCode|Description|
+|-----|------------|
+|`/SCWM/PI_COMPL_DEL`|Delete Completeness Data Sets|
+|`/SCWM/PI_COUNT`|Enter Physical Inventory Count|
+|`/SCWM/PI_COUNTLIST`|	Create Phys. Inventory Count in List|
+|`/SCWM/PI_CREATE`|Create Physical Inventory Document|
+|`/SCWM/PI_DOC_CREATE`|	Create Physical Inventory Document|
+|`/SCWM/PI_DOWNLOAD`|Download Storage Bins and Count Data|
+|`/SCWM/PI_PROCESS`|Process Physical Inventory Document|
+|`/SCWM/PI_SAMP_CR`|Upload Sample to Create PI Documents|
+|`/SCWM/PI_SAMP_STOCK`|Download Stock Population|
+|`/SCWM/PI_SAMP_UPDATE`|Download Results or Stock Population|
+|`/SCWM/PI_UPLOAD`|Upload Storage Bins and Count Data|
+|`/SCWM/PI_USER`|User Maint. Tolerance Gr. Phys.Inv.|
+|`/SCWM/PI_USER_DIFF`|Assign Users to Tol. Group for Diff.|
+|`/SCWM/PIDO`|Number Range Maintenance: /SCWM/PIDO|
