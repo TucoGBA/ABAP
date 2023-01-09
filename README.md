@@ -47,6 +47,9 @@ ASSIGN ('(SAPLCOKO1)AFVGD[]') TO <FS_AFVGD>.
             clear lv_ser_stock.
         endtry.
 ```
+###### Timestamp helper class
+`CL_ABAP_TIMESTAMP_UTIL`
+
 ## TCodes
 ###### Physical Inventory
 |TCode|Description|
