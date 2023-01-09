@@ -34,6 +34,19 @@ ASSIGN ('(SAPLCOKO1)AFVGD[]') TO <FS_AFVGD>.
   CONVERT DATE lv_act_date TIME lv_act_time
                INTO TIME STAMP ls_item_wa-count_date TIME ZONE lv_timezone.
 ```
+###### Get serials for particular  matid in warehouse
+```
+ try.
+            /scwm/cl_serial=>get_serial(
+              exporting
+                iv_lgnum = p_lgnum
+                iv_matid = <fs_item>-data-stock_item-matid
+              importing
+                ev_stock = lv_ser_stock ).
+          catch /scwm/cx_serial.
+            clear lv_ser_stock.
+        endtry.
+```
 ## TCodes
 ###### Physical Inventory
 |TCode|Description|
