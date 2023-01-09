@@ -37,18 +37,25 @@ ASSIGN ('(SAPLCOKO1)AFVGD[]') TO <FS_AFVGD>.
 ###### Get serials for particular  matid in warehouse
 ```
  try.
-            /scwm/cl_serial=>get_serial(
-              exporting
-                iv_lgnum = p_lgnum
-                iv_matid = <fs_item>-data-stock_item-matid
-              importing
-                ev_stock = lv_ser_stock ).
-          catch /scwm/cx_serial.
-            clear lv_ser_stock.
-        endtry.
+    /scwm/cl_serial=>get_serial(
+      exporting
+        iv_lgnum = p_lgnum
+        iv_matid = <fs_item>-data-stock_item-matid
+      importing
+        ev_stock = lv_ser_stock ).
+  catch /scwm/cx_serial.
+    clear lv_ser_stock.
+endtry.
 ```
 ###### Timestamp helper class
-`CL_ABAP_TIMESTAMP_UTIL`
+```
+CL_ABAP_TIMESTAMP_UTIL
+    TSTMP_SECONDS_BETWEEN
+    TSTMPL_SECONDS_BETWEEN
+    TSTMP_ADD_SECONDS
+    TSTMPL_ADD_SECONDS
+    GET_USER_TIME_ZONE_STRING
+```
 
 ## TCodes
 ###### Physical Inventory
