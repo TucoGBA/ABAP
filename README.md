@@ -75,3 +75,7 @@ CL_ABAP_TIMESTAMP_UTIL
 |`/SCWM/PI_USER`|User Maint. Tolerance Gr. Phys.Inv.|
 |`/SCWM/PI_USER_DIFF`|Assign Users to Tol. Group for Diff.|
 |`/SCWM/PIDO`|Number Range Maintenance: /SCWM/PIDO|
+###### Operational TCoded
+|TCode|Description|
+|-----|------------|
+|`SIMGH`|IMG Structure Maintenance |
