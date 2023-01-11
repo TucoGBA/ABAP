@@ -57,6 +57,18 @@ CL_ABAP_TIMESTAMP_UTIL
     GET_USER_TIME_ZONE_STRING
 ```
 
+## Database tables 
+###### for deliveries
+
+|Database Table|Description|
+|-----|------------|
+|/SCDL/DB_PROCH_I|Inbound Delivery Header|
+|/SCDL/DB_PROCI_I|Inbound Delivery Item|
+|/SCDL/DB_PROCH_O|Outbound Delivery Order Header|
+|/SCDL/DB_PROCI_O|Outbound Delivery Order Item|
+|/SCDL/DB_DLVH_O|Outbound Delivery Header|
+|/SCDL/DB_DLVI_O|Outbound Delivery Item|
+
 ## TCodes
 ###### Physical Inventory
 |TCode|Description|
