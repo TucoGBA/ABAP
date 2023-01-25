@@ -56,6 +56,25 @@ CL_ABAP_TIMESTAMP_UTIL
     TSTMPL_ADD_SECONDS
     GET_USER_TIME_ZONE_STRING
 ```
+###### Read outbound delivery using Service Provider
+```
+DATA(lo_dlv) = NEW /scdl/cl_sp_fd_out(
+  iv_mode              = /scdl/cl_sp=>sc_mode_classic
+  iv_enable_extensions = abap_true
+  iv_doccat            = /scdl/if_dl_doc_c=>sc_doccat_out_prd
+).
+
+DATA: lt_inkeys TYPE /scdl/t_sp_k_head_partyloc,
+      lt_outrecords type /scdl/t_sp_a_head_partyloc.
+
+lt_inkeys = value #( ( docid = '[.....]' ) ).
+
+lo_dlv->select(
+    EXPORTING aspect = /scdl/if_sp_c=>sc_asp_head_partyloc
+              inkeys = lt_inkeys
+    IMPORTING outrecords = lt_outrecords
+).
+```
 
 ## Database tables 
 ###### for deliveries
