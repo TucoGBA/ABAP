@@ -75,6 +75,10 @@ lo_dlv->select(
     IMPORTING outrecords = lt_outrecords
 ).
 ```
+## RFUI
+###### Debugging
+by pressing CTRL+Shift+F1 within the RF Screen
+set a breakpoint in method CALL_FLOW_PROCESS (class /SCWM/CL_RF_BLL_SRVC) to find the function module.
 
 ## Database tables 
 ###### for deliveries
