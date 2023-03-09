@@ -124,3 +124,6 @@ Step 3: you will find TR with R (Released) status.
 ###### Compare objects
 SE39
 SREPO
+SCMP
+SCU0
+CCAPPS
