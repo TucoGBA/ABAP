@@ -80,6 +80,24 @@ lo_dlv->select(
 by pressing CTRL+Shift+F1 within the RF Screen
 set a breakpoint in method CALL_FLOW_PROCESS (class /SCWM/CL_RF_BLL_SRVC) to find the function module.
 
+## Fiori
+###### Cache Management in SAP Fiori
+There are different Layers that handle caching:
+
+The browser itself HTTP caching
+Your frontend server (ICM) - If you take a look at transaction SMICM you can see for example that views/controllers of an UI5 Application are getting stored with an validity period
+Backend Server (only Metadata Caching of your services/service definition)
+Good blog post about Cache Management in SAP Fiori
+
+Solutions:
+When deploying your UI5 App via WEBIDE the app_index get's calculated. Sometimes this fails. So inbefore saying Test now! run the report /UI5/APP_INDEX_CALCULATE for your specific SAPUI5 application in your frontend server.
+If your OData service changed run the transaction /IWFND/CACHE_CLEANUP in your frontend server and the transaction /IWBEP/CACHE_CLEANUP in the backend server.
+For myself in developement and quality management system i sometimes run the report /UI2/INVALIDATE_CLIENT_CACHES if changed translations SE63 doesn't show up.
+So in developement & quality management system just run /UI5/APP_INDEX_CALCULATE and /UI2/INVALIDATE_CLIENT_CACHES and you should be good to go.
+
+In Production take care, caching is all about performance, so if you clear all caches and your company has like 500 users opening Fiori Launchpad at 08:00 am things can get messy.
+Source: https://stackoverflow.com/questions/65904453/sapui5-application-is-not-updated-immediately-from-sap-netweaver
+
 ## Database tables 
 ###### for deliveries
 
