@@ -34,6 +34,14 @@ ASSIGN ('(SAPLCOKO1)AFVGD[]') TO <FS_AFVGD>.
   CONVERT DATE lv_act_date TIME lv_act_time
                INTO TIME STAMP ls_item_wa-count_date TIME ZONE lv_timezone.
 ```
+###### Read GUID for given entitled
+```
+CALL FUNCTION 'BUPA_NUMBERS_GET'
+  EXPORTING
+    iv_partner      = iv_bp_id
+  IMPORTING
+    ev_partner_guid = ev_bp_guid.
+```
 ###### Get serials for particular  matid in warehouse
 ```
  try.
