@@ -154,8 +154,11 @@ Step 1: Go to SE38-> enter program name : RSBDCOS0 -> execute
 T-Code: AL11
 
 ###### Compare objects
-SE39
-SREPO
-SCMP
-SCU0
-CCAPPS
+*Tcodes*:
+1. SE39
+1. SREPO
+1. SCMP
+1. SCU0
+1. CCAPPS
+*Reports*:
+1. RSYSCOMP
