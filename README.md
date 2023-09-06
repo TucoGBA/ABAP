@@ -118,6 +118,84 @@ Source: https://stackoverflow.com/questions/65904453/sapui5-application-is-not-u
 |/SCDL/DB_DLVH_O|Outbound Delivery Header|
 |/SCDL/DB_DLVI_O|Outbound Delivery Item|
 
+Main Tables
+FUNCTION	TABLE	DESCRIPTION
+STOCK
+	/SCWM/AQUA	Available stock for warehouse task creation
+ 	/SCWM/QUAN	Physical stock attributes
+ 	/LIME/NQUAN	Physical stock
+ 	/SCWM/STOCK_IW01	
+
+Normal stock
+ 	/SCWM/STOCK_IW02	Batch managed stock
+ 	/SCWM/STOCK_IW03	Reference stock (PDI, PDO)
+ 	/SCWM/STOCK_IW04	Special stock
+ 	 	 
+WAREHOUSE TASK (WT)
+	/SCWM/ORDIM_C	Warehouse tasks confirmed
+ 	/SCWM/ORDIM_CS	Serial number for confirmed warehouse task item
+ 	/SCWM/ORDIM_E	Exception codes for warehouse task
+ 	/SCWM/ORDIM_H	Warehouse task: Movements of HU items
+ 	/SCWM/ORDIM_HS	Serial numbers for HU item movements
+ 	/SCWM/ORDIM_L	Warehouse tasks log table
+ 	/SCWM/ORDIM_LS	Serial numbers for warehouse task log table
+ 	/SCWM/ORDIM_O	Warehouse tasks opened
+ 	 	 
+TRANSPORTATION UNIT (TU)
+	/SCWM/TU_DLV	Assignment of Deliveries and HUs to Transportation Units
+ 	/SCWM/TU_DOOR	Relationship between TU activities and door activities
+ 	/SCWM/TUNIT	Data for the TU itself
+ 	/SCWM/TU_SR_ACT	Contains start date/times and end dates/times
+ 	/SCWM/TU_STATUS	Status of the TU activities
+ 	/SCWM/TU_VEH	Contains one or more vehicle activities with which a TU activity can be linked
+ 	/SCWM/DOOR_SRACT	S&R Activities of a Door
+ 	 	 
+WAVE
+	/SCWM/WAVEHDR	Wave header information
+ 	/SCWM/WAVEITM	Wave item
+ 	 	 
+OUTBOUND DELIVERY	
+	/SCDL/DB_DLVH_O	Outbound Delivery Header
+ 	/SCDL/DB_DLVI_O	Outbound Delivery Item
+ 	
+/SCDL/DB_PROCH_O
+
+Outbound Delivery Order Header
+ 	/SCDL/DB_PROCI_O	Outbound Delivery Order Item
+ 	 	 
+INBOUND DELIVERY	
+	/SCDL/DB_PROCH_I	Inbound Delivery Header
+ 	/SCDL/DB_PROCI_I	Inbound Delivery Item
+ 	 	 
+REFERENCE	
+	/SCDL/DB_REFDOC	Reference
+ 	/SCDL/DB_REQH	Header Inbound Delivery Notification / Outbound Delivery Request
+ 	/SCDL/DB_REQI	Item Inbound Delivery Notification / Outbound Delivery Request
+ 	 	 
+HANDLING UNIT (HU)	
+	/SCWM/HUHDR	Handling unit header
+ 	/SCWM/GMHUIDENT	Additional HU Identifications for a Goods Movement Log
+ 	/SCWM/HUSSTAT	Individual status for each handling unit
+ 	/SCWM/HUREF	Handling unit reference
+ 	/SCWM/HUSTOBJ	Information about handling unit status object
+ 	/SCWM/GMHUSTAT	HU Status of HUs from Goods Movement Log
+ 	/SCWM/GMHUITM	Handling Unit Item
+ 	/SCWM/GMHUHDR	Goods Movement Handling Unit Header Reading details in a HU
+ 
+STORAGE BINS	
+	/SCWM/LAGP	Storage Bins
+ 	/SCWM/LAGPS	Bins for execution areas and activities
+ 	 	 
+MASTER DATA	
+	/SAPAPO/MATKEY	Product
+ 	/SAPAPO/MATMAP	Mapping table for products
+ 	/SAPAPO/MATEXEC	Product execution data
+ 	/SAPAPO/MATTXT	Material Descriptions
+ 	/SAPAPO/MATLWHST	Location product for Location Warehouse and sub location storage type
+ 	/SAPAPO/MATLWH	Location product for Location Warehouse
+ 
+/SCWM/DOOR_SRACT
+
 ## TCodes
 ###### Physical Inventory
 |TCode|Description|
