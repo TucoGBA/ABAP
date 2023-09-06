@@ -118,7 +118,7 @@ Source: https://stackoverflow.com/questions/65904453/sapui5-application-is-not-u
 |/SCDL/DB_DLVH_O|Outbound Delivery Header|
 |/SCDL/DB_DLVI_O|Outbound Delivery Item|
 
-Main Tables
+###Main Tables
 FUNCTION	TABLE	DESCRIPTION
 STOCK
 	/SCWM/AQUA	Available stock for warehouse task creation
