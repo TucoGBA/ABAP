@@ -147,6 +147,12 @@ Step 1: Go to SE38-> enter program name : RDDIT076 -> execute
 Step 2: Enter TR/Task which status you want to convert from released to modifiable -> execute program
 Step 3: you will find TR with R (Released) status.
 
+## Files and catalogues
+###### Acces SAP system console
+Step 1: Go to SE38-> enter program name : RSBDCOS0 -> execute
+###### Browse SAP system files and directories
+T-Code: AL11
+
 ###### Compare objects
 SE39
 SREPO
