@@ -1,3 +1,12 @@
+# FIORI
+## UI5
+### 2792008 - SAPUI5 changes in SE80 are not reflected when running the application
+Performing the following steps may be necessary if the old version is still delivered:
++ Calculate the application index (this may not be necessary if cachebuster resource root is not used): In transaction SE38, run report `/UI5/APP_INDEX_CALCULATE`
++ Clear the ICM cache: In transaction `SMICM`, Goto `Menu > HTTP Plug-In > Server Cache > Invalidate Globally`
++ Invalidate files cached in the browser: In transaction SE38, run report `/UI2/INVALIDATE_CLIENT_CACHES`
+
+
 # SAP - EWM
 
 ## Useful ABAP code sinpets
