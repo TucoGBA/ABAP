@@ -116,6 +116,11 @@ In Production take care, caching is all about performance, so if you clear all c
 Source: https://stackoverflow.com/questions/65904453/sapui5-application-is-not-updated-immediately-from-sap-netweaver
 
 ## Database tables 
+###### To check the sorted storage bin in the table
+```
+/SCWM/R_WAVE_SIMULATE
+```
+
 ###### for deliveries
 
 |Database Table|Description|
