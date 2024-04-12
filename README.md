@@ -6,6 +6,10 @@ Performing the following steps may be necessary if the old version is still deli
 + Clear the ICM cache: In transaction `SMICM`, Goto `Menu > HTTP Plug-In > Server Cache > Invalidate Globally`
 + Invalidate files cached in the browser: In transaction SE38, run report `/UI2/INVALIDATE_CLIENT_CACHES`
 
+# SAP
+## Texts
+### add standard text to TR
+run `RSTXTRAN` report via `se38`
 
 # SAP - EWM
 
