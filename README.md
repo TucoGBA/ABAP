@@ -6,7 +6,31 @@ Performing the following steps may be necessary if the old version is still deli
 + Clear the ICM cache: In transaction `SMICM`, Goto `Menu > HTTP Plug-In > Server Cache > Invalidate Globally`
 + Invalidate files cached in the browser: In transaction SE38, run report `/UI2/INVALIDATE_CLIENT_CACHES`
 + /UI5/UPD_ODATA_METADATA_CACHE
+### Load images to frontend
+method: /IWBEP/IF_MGW_APPL_SRV_RUNTIME~GET_STREAM
+call .../$value
+```
+   IF sy-subrc = 0.
+      
+      lv_xstring = cl_ssf_xsf_utilities=>get_bds_graphic_as_bmp(
+           p_object = 'GRAPHICS'
+           p_name   = lv_name
+           p_id     = 'BMAP'
+           p_btype  = 'BCOL' ).
 
+      
+      DATA(ls_media) = VALUE /iwbep/if_mgw_appl_types=>ty_s_media_resource(
+        value     = lv_xstring
+        mime_type = 'image/bmp'
+      ).
+
+      
+      copy_data_to_ref(
+        EXPORTING is_data = ls_media
+        CHANGING  cr_data = er_stream ).
+
+    ENDIF.
+```
 # SAP
 ## Texts
 ### add standard text to TR
