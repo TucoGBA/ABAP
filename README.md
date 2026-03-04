@@ -121,6 +121,8 @@ lo_dlv->select(
     IMPORTING outrecords = lt_outrecords
 ).
 ```
+###### Read outbound delivery using Service Provider
+[Contribution guidelines for this project]( )
 ## RFUI
 ###### Debugging
 by pressing CTRL+Shift+F1 within the RF Screen
