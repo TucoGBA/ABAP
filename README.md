@@ -122,7 +122,10 @@ lo_dlv->select(
 ).
 ```
 ###### Update outbound delivery using Service Provider
-[Service Provier call - ODO modification example](./SAP EWM - Service Provier call - ODO modification example.abap)
+
+[Service Provier call - ODO modification example](SAP EWM - Service Provier call - ODO modification example.abap)
+[WP](wp.pl)
+
 ## RFUI
 ###### Debugging
 by pressing CTRL+Shift+F1 within the RF Screen
