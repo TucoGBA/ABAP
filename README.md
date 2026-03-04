@@ -121,8 +121,8 @@ lo_dlv->select(
     IMPORTING outrecords = lt_outrecords
 ).
 ```
-###### Read outbound delivery using Service Provider
-[Contribution guidelines for this project]( )
+###### Update outbound delivery using Service Provider
+[Service Provier call - ODO modification example](./SAP EWM - Service Provier call - ODO modification example.abap)
 ## RFUI
 ###### Debugging
 by pressing CTRL+Shift+F1 within the RF Screen
